@@ -11,7 +11,14 @@ chipotle = Venue('Chipotle')
 # remove the hard coding of items 
 # particular to user so that we can also save venue using the save method
 def save(obj):
-    insert_str = f"""INSERT INTO  (name, birthday) VALUES (%s, %s);"""
-    cursor.execute(insert_str, ('bob', '8/3/1997'))
+    breakpoint()
+    insert_str = f"""INSERT INTO {obj.__table__} (name, birthday) VALUES (%s, %s);"""
+    # cursor.execute(insert_str, ('bob', '8/3/1997'))
+    # conn.commit()
+    return insert_str
+
+
+# save(sam)
+# save(chipotle)
 
 

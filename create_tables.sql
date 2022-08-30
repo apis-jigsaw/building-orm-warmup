@@ -6,6 +6,6 @@ CREATE TABLE IF NOT EXISTS users (
 
 CREATE TABLE IF NOT EXISTS venues (
    id serial PRIMARY KEY,
-   name varchar(250),
+   name varchar(250)
 );
 
